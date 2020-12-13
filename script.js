@@ -1,15 +1,16 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
 
-<script>
+
+<script type="text/javascript">
 
 function openModal() {
-  document.getElementById("myModal").style.display = "block";
+  document.getElementById("myModal").style = "display: block"
 };
 
 
 function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+  document.getElementById("myModal").style = "display: block"
 };
 
 var slideIndex = 1;
