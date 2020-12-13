@@ -18,73 +18,30 @@
 
 <div class="row">
   <div class="column">
-    <img src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2F8EB515DA-1D96-4AC4-8986-066E5D8AB024.jpg?v=1607897130636" onclick="openModal();currentSlide(1)" class="hover-shadow" width="300" height="400">
+    <img src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2F8EB515DA-1D96-4AC4-8986-066E5D8AB024.jpg?v=1607897130636" alt="Palmtree" onclick="myFunction(this);" width="300" height="400">
   </div>
   <div class="column">
-    <img src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2F9418E693-4604-4D05-A420-40146FF44357.jpg?v=1607897141193" onclick="openModal();currentSlide(2)" class="hover-shadow" width="300" height="400">
+    <img src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2F9418E693-4604-4D05-A420-40146FF44357.jpg?v=1607897141193" alt="Tree" onclick="myFunction(this);" width="300" height="400">
   </div>
   <div class="column">
-    <img src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2F4123F5D8-2141-4935-B2C0-1729FE32D2A1.jpg?v=1607897135754" onclick="openModal();currentSlide(3)" class="hover-shadow" width="300" height="400">
+    <img src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2F4123F5D8-2141-4935-B2C0-1729FE32D2A1.jpg?v=1607897135754" alt="Pinkflower" onclick="myFunction(this);" width="300" height="400">
   </div>
   <div class="column">
-    <img src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2FF28C7C65-97F0-4568-ACBC-1C3166B4EE82.jpg?v=1607897156650" onclick="openModal();currentSlide(4)" class="hover-shadow" width="300" height="400">
+    <img src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2FF28C7C65-97F0-4568-ACBC-1C3166B4EE82.jpg?v=1607897156650" alt="Flower" onclick="myFunction(this);" width="300" height="400">
   </div>
 </div>
 
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
 
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2F8EB515DA-1D96-4AC4-8986-066E5D8AB024.jpg?v=1607897130636" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2F9418E693-4604-4D05-A420-40146FF44357.jpg?v=1607897141193" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2F4123F5D8-2141-4935-B2C0-1729FE32D2A1.jpg?v=1607897135754" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2FF28C7C65-97F0-4568-ACBC-1C3166B4EE82.jpg?v=1607897156650" style="width:100%">
-    </div>
-
- 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-   
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-  
-    <div class="column">
-      <img class="demo" src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2F8EB515DA-1D96-4AC4-8986-066E5D8AB024.jpg?v=1607897130636" onclick="currentSlide(1)" alt="Palm Tree">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2F9418E693-4604-4D05-A420-40146FF44357.jpg?v=1607897141193" onclick="currentSlide(2)" alt="Up in the tree">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2F4123F5D8-2141-4935-B2C0-1729FE32D2A1.jpg?v=1607897135754" onclick="currentSlide(3)" alt="Hydrangea">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="https://cdn.glitch.com/74bc77a0-b926-4965-94b5-3ff46e7f848e%2FF28C7C65-97F0-4568-ACBC-1C3166B4EE82.jpg?v=1607897156650" onclick="currentSlide(4)" alt="Pink blooming flowers">
-    </div>
-  </div>
+  <!-- Image text -->
+  <div id="imgtext"></div>
 </div>
-
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+     
   </body>
 </html>
