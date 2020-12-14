@@ -10,10 +10,3 @@ h1 {
   width: 23.5;
   padding: 75px;
 }
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
